@@ -7,7 +7,7 @@ include ../../libs/cmdparser/cmdparser.mk
 include ../../libs/simplebmp/simplebmp.mk
 include ../../libs/lodepng/lodepng.mk
 include ../../libs/opencl/opencl.mk
-
+// Sergei
 # Edge Detection Host Application
 edge_SRCS=./src/edgedetection_app.cpp ./src/main.cpp ./src/sobel_cpuonly.cpp $(simplebmp_SRCS) $(logger_SRCS) $(cmdparser_SRCS) $(xcl_cpp_SRCS) $(lodepng_SRCS)
 edge_HDRS=./src/sobel_cpuonly.h ./src/edgedetection_app.h $(xcl_cpp_HDRS) $(cmdparser_HDRS) $(logger_HDRS) $(simplebmp_HDRS) $(lodepng_HDRS)
